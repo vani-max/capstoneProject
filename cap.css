@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2D2726;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+    background-color: #2D2726;
+    border-bottom: 0.094rem solid #E6D8D633;
+}
+
+header .logo {
+    font-size: 2.625rem;
+    font-weight: 400;
+    color: #E6D8D6;
+    font-family: Prompt;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    margin: 0 0.938rem;
+    color: #E6D8D6;
+    font-size: 1.5rem;
+    font-family: Hepta Slab;
+    line-height: 32px;
+    font-weight: 200;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #E6D8D6;
+    font-size: 1.75rem;
+    font-family: Hepta Slab;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.main {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.main h1 {
+    font-size: 8rem;
+    font-family: Hepta Slab;
+    color: #E6D8D6;
+    line-height: 7.5rem;
+    font-weight: 450;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.15em solid #E6D8D6;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 25rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.portfolio .item {
+    text-align: center;
+    background: #2D2726;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+}
+
+.portfolio .item img {
+    height: 12.5rem;
+    object-fit: cover;
+    width: 100%; 
+    transition: transform 1s ease;
+}
+
+.portfolio .item .title {
+    font-size: 1.25rem;
+    font-family: Fira Sans;
+    color: #E6D8D6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.about {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    gap: 3rem;
+    font-family: Fira Sans;
+    color: #E6D8D6;
+}
+
+.about .about-para {
+    font-weight: 200;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #E6D8D6;
+    margin-left: 56.25rem;
+    text-align: left;
+}
+
+footer {
+    background: #2D2726;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+}
+
+.copyright {
+    font-size: 1.25rem;
+    color: #E6D8D69E;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-family: Hepta Slab; 
+}  
+
+.contact-button button {
+    padding: 1rem;
+    background-color: #2D2726;
+    border: 1px solid grey;
+    color: #E6D8D6;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-family: Fira Sans;
+    font-weight: 450;
+    font-size: 1.25rem;
+    margin-left: 65rem;
+    animation: bounce 1.5s ease infinite;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #E6D8D69E;
+    text-align: left;
+}
+
+.contact-button button:hover {
+    background-color: green;
+    color: yellow;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: Fira Sans;
+    font-size: 1.188rem;
+    font-weight: 250;
+    line-height: 2rem;
+    margin-left: 12.5rem;
+    margin-right: 6.25rem;
+    color: #E6D8D6;
+}
+
+.section .lig {
+    color: #E6D8D69E;
+}
+
+.contact {
+    font-family: Hepta Slab;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-left: 12.5rem;
+    color: #E6D8D6;
+    margin-bottom: 3.125rem;
+}
+
+.foot {
+    margin: 0.313rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: #2D2726;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(213, 213, 30, 0.12) 0px -12px 30px, rgba(224, 208, 32, 0.12) 0px 4px 6px, rgba(211, 243, 53, 0.17) 0px 12px 13px, rgba(214, 230, 68, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main h1:hover {
+    color: rgb(58, 99, 58);
+    cursor: pointer;
+}
+
+header .logo:hover {
+    color: rgb(58, 99, 58);
+    cursor: pointer;
+    animation: bounce 1.5s ease infinite;
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+    color: rgb(58, 99, 58);
+}
+
+footer h3:hover {
+    text-decoration: underline;
+    color: rgb(58, 99, 58);
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar ul li {
+        margin: 0.5rem 0;
+        font-size: 1.25rem;
+    }
+
+    .main h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .portfolio .grid {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .about .about-para {
+        margin-left: 1rem;
+    }
+
+    .contact-button button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-content p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 1rem;
+    }
+
+    .main h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+    .portfolio .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .about .about-para {
+        margin-left: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    .contact-button button {
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main h1 {
+        font-size: 8rem;
+        line-height: 7.5rem;
+    }
+
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about .about-para {
+        margin-left: 56.25rem;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-button button {
+        margin-left: 65rem;
+    }
+}
